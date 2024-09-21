@@ -28,16 +28,16 @@
             <div class="divider"></div>
             <!-- User action button -->
             <div class="grid grid-cols-3 gap-4">
-              <button class="btn btn-lg">Add Money</button>
-              <button class="btn btn-lg">Cash-out</button>
-              <button class="btn btn-lg">Transfer Money</button>
-              <button class="btn btn-lg">Get Bonus</button>
-              <button class="btn btn-lg">Pay Bill</button>
-              <button class="btn btn-lg">Transactions</button>
+              <button id="add-money-form-show" class="btn btn-lg">Add Money</button>
+              <button id="cash-out-form-show" class="btn btn-lg">Cash-out</button>
+              <button id="transfer-money-form-show" class="btn btn-lg">Transfer Money</button>
+              <button id="get-bonus-form-show" class="btn btn-lg">Get Bonus</button>
+              <button id="pay-bill-form-show" class="btn btn-lg">Pay Bill</button>
+              <button id="transactions-log-show" class="btn btn-lg">Transactions</button>
             </div>
             <div class="divider"></div>
             <!-- Add Money Form Starts Here -->
-            <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <div id="add-money-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
               <form class="card-body">
                 <div class="form-control">
                   <label class="label">
@@ -70,7 +70,7 @@
             </div>
             <!-- Add Money Form Ends Here -->
             <!-- Cash-out form starts here -->
-            <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"></div>
+            <div id="cash-out-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
               <form class="card-body">
                 <div class="form-control">
                   <label class="label">
@@ -102,6 +102,14 @@
               </form>
             </div>
             <!-- Cash-out form ends here -->
+            <!-- Transaction history starts -->
+            <div id="transaction-container">
+              <div class="flex justify-evenly item">
+                <div><h5>Latest Payment</h5></div>
+                <div><h6>View All</h6></div>
+              </div>
+            </div>
+            <!-- Transaction history ends -->
           </div>
         </div>
       </div>
@@ -109,5 +117,6 @@
     <script src="js/utilities.js"></script>
     <script src="js/addmoney.js"></script>
     <script src="js/cashout.js"></script>
+    <script src="js/features.js"></script>
   </body>
 </html>
