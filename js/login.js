@@ -8,8 +8,6 @@ document.getElementById('login-btn')
    window.location.href = '/home.html';
   }
   else{
-   console.log('Incorrect phone number or pin.');
+   alert('Incorrect phone number or pin.');
   }
-
-  console.log(mblInput, pin);
  })

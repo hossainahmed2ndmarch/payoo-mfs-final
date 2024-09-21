@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Document</title>
-</head>
-<body>
- 
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="flex justify-center">
+      <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-3">
+            <!-- Available balance -->
+            <div class="stats shadow">
+              <div class="stat">
+                <div id="main-balance" class="stat-value">89400</div>
+                <div class="stat-desc">Available Balance</div>
+              </div>
+            </div>
+            <!-- Divider -->
+            <div class="divider"></div>
+            <!-- User action button -->
+            <div class="grid grid-cols-3 gap-4">
+              <button class="btn btn-lg">Add Money</button>
+              <button class="btn btn-lg">Cash-out</button>
+              <button class="btn btn-lg">Transfer Money</button>
+              <button class="btn btn-lg">Get Bonus</button>
+              <button class="btn btn-lg">Pay Bill</button>
+              <button class="btn btn-lg">Transactions</button>
+            </div>
+            <!-- Add Money Form Starts Here -->
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Amount to Add</span>
+                  </label>
+                  <input
+                    type="email"
+                    placeholder="Add Amount to withdraw"
+                    id="input-add-money"
+                    class="input input-bordered"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Pin Number</span>
+                  </label>
+                  <input
+                    type="password"
+                    placeholder="Enter 4 digit pin number"
+                    id="add-money-pin"
+                    class="input input-bordered"
+                    required
+                  />
+                </div>
+                <div class="form-control mt-6">
+                  <button id="add-money-btn" class="btn btn-primary">Add Money</button>
+                </div>
+              </form>
+            </div>
+            <!-- Add Money Form Ends Here -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/utilities.js"></script>
+    <script src="js/addmoney.js"></script>
+  </body>
 </html>
